@@ -11,7 +11,7 @@
     <tr th:each="todo : ${todos}">
       <td th:text="${todo.id}" />
       <td th:text="${todo.task}" />
-      <td><a th:href="@{/delete(id=${todo.id})}">del</a>
+      <td><a th:href="@{/todo/delete(id=${todo.id})}">del</a>
     </tr>
   </tbody>
   </table>
